@@ -1,6 +1,6 @@
 # miningPNMLS
 
-This repo provides a tool to iterate through a given directory and checks all sub-directories to find all event logs with `.xes` extensions. And then, it will mine petri-nets (with `.pnml` extensions) from the event logs using a specific miner with a set of configurable parameters. The details of miners refers to [here](https://github.com/zihangs/Workshop).
+This repo provides a tool to iterate through a given directory and checks all sub-directories to find all event logs with `.xes` extensions. And then, it will mine petri-nets (with ``.pnml`` extensions) from the event logs using a specific miner with a set of configurable parameters. The details of miners refers to [here](https://github.com/zihangs/Workshop).
 
 ### Instructions
 
