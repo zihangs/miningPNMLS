@@ -8,6 +8,27 @@ public class Mine {
 	// root can be a directory or a file
 	public static void traverseFiles(File file, String[] args) {
 		if (file.isDirectory()) {
+			
+			
+			// plans to XES 
+			if (file.getName().contentEquals("train")) {
+				String command = "java -cp xes.jar generate_XES " + file.getPath() + "/";
+				
+				
+				try {
+					Runtime.getRuntime().exec(command).waitFor();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+			
+			
+			
 			for (File an_item : file.listFiles()) {
 				traverseFiles(an_item, args);
 			}
